@@ -1,11 +1,11 @@
 baseURL: /
 title: Eureka Demo
 
-# Uncomment when not installing with Hugo Modules
+# Comment when installing with Hugo Modules (NO DOUBLE NEGATION!!!!!!) 用hugo模块就把下面这行注释了（能不能别双重否定！sjb！）
 # theme: eureka
-# Comment when not installing with Hugo Modules
+# Comment when installing with Git Submodules 用git子模块就把下面这行注释了
 theme: wangchucheng.com/hugo-eureka
-# If you cannot access the Github mirror, you can also use the Gitee mirror: gitee.com/wangchucheng/hugo-eureka
+# If you cannot access the Github mirror, you can also use the Gitee mirror: gitee.com/wangchucheng/hugo-eureka （建议不要用，不如弄个飞机）
 
 paginate: 3
 copyright: >
@@ -43,3 +43,7 @@ taxonomies:
 
 build:
   useResourceCacheWhen: always
+
+# Add proxy for hugo modules downloading in China 添加hugo模块下载代理
+module:
+  proxy: https://goproxy.cn
